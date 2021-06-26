@@ -1,0 +1,16 @@
+int controller_loadFromText(char* path , LinkedList* pArrayListLibro);
+int controller_loadFromBinary(char* path , LinkedList* pArrayListLibro);
+int controller_addLibro(LinkedList* pArrayListLibro);
+int controller_editLibro(LinkedList* pArrayListLibro);
+int controller_removeLibro(LinkedList* pArrayListLibro);
+int controller_ListLibro(LinkedList* pArrayListLibro);
+int controller_sortLibro(LinkedList* pArrayListLibro);
+int controller_saveAsText(char* path , LinkedList* pArrayListLibro);
+int controller_saveAsBinary(char* path , LinkedList* pArrayListLibro);
+int controller_getMaxId(LinkedList* pArrayListLibro);
+int controller_deleteLinkedList(LinkedList* pArrayListLibro);
+int controller_putInDisLibro(LinkedList* pArrayListLibro);
+int controller_informes(LinkedList* pArrayListLibro);
+//int controller_Sala(LinkedList* pArrayListLibro);
+//int controller_PrintSala(LinkedList* pArrayListLibro);
+int controller_contadorEntrada(LinkedList* pArrayListLibro);
