@@ -47,7 +47,7 @@ void libro_print(eLibro* this);
 //int libro_sortHoras(void* thisOne, void* thisTwo);
 int libro_sortTitulo(void* thisOne, void* thisTwo);
 int libro_sortAutor(void* thisOne, void* thisTwo);
-void libro_putIn(void* this);
+void libro_putDis(void* this);
 //void libro_putDis(void* this);
 int libro_putSala(void* this, int sala);
 int libro_putEntradas4(void* this);

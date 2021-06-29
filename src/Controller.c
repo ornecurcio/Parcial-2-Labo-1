@@ -464,14 +464,14 @@ int controller_saveAsText(char* path , LinkedList* pArrayListLibro)
 		else
 		{
 			auxCantLink=ll_len(pArrayListLibro);
-			fprintf(pFile,"id_venta,titulo_pelicula,dia,horario,sala,cantidad_entradas,monto\n");
+			fprintf(pFile,"id,titulo,autor,precio,editorialId\n");
 			for(int i=0; i<auxCantLink; i++)
 			{
 				pAuxLibro = (eLibro*)ll_get(pArrayListLibro, i);
 				if(libro_getId(pAuxLibro, &auxId)==0 &&
 				   libro_getTitulo(pAuxLibro, auxTitulo)==0 &&
-				   libro_getPrecio(pAuxLibro, &auxPrecio)==0 &&
 				   libro_getAutor(pAuxLibro, auxAutor)==0 &&
+				   libro_getPrecio(pAuxLibro, &auxPrecio)==0 &&
 				   libro_getEditorialId(pAuxLibro, &auxEditorialId)==0 &&
 				   libro_IdToEditorial(auxEditorialId, auxEditorial)==0)
 				{
@@ -553,17 +553,17 @@ int controller_saveAsText(char* path , LinkedList* pArrayListLibro)
 //	}
 //	return retorno;
 //}
-//int controller_putInDisLibro(LinkedList* pArrayListLibro)
-//{
-//	int retorno=-1;
-//	void (*pFunc)(void* element);
-//	if(pArrayListLibro!=NULL)
-//	{
-//		pFunc=libro_putIn;
-//		ll_map(pArrayListLibro, pFunc);
-//	}
-//    return retorno;
-//}
+int controller_putInDisLibro(LinkedList* pArrayListLibro)
+{
+	int retorno=-1;
+	void (*pFunc)(void* element);
+	if(pArrayListLibro!=NULL)
+	{
+		pFunc=libro_putDis;
+		ll_map(pArrayListLibro, pFunc);
+	}
+    return retorno;
+}
 //int controller_informes(LinkedList* pArrayListLibro)
 //{
 //	int retorno=-1;

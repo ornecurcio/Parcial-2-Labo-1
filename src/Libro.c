@@ -386,32 +386,38 @@ int libro_sortAutor(void* thisOne, void* thisTwo)
 	return retorno;
 }
 
-//void libro_putIn(void* this)
-//{
-//	int auxPrecio;
-//	float auxFacturacion;
-//	int auxCantidad;
-//	if(libro_getPrecio((eLibro*)this, &auxPrecio)==0)
-//	{
-//		if(auxPrecio==1 || auxPrecio==2 || auxPrecio==3)
-//		{
-//			libro_getCantidad(this, &auxCantidad);
-//			auxFacturacion=(float)auxCantidad*240;
-//			libro_setFacturacion(this, auxFacturacion);
-//		}
-//		else
-//		{
-//			libro_getCantidad(this, &auxCantidad);
-//			auxFacturacion=(float)auxCantidad*350;
-//			libro_setFacturacion(this, auxFacturacion);
-//		}
-//	}
-//	if(libro_getCantidad((eLibro*)this, &auxCantidad)==0 && auxCantidad>=3)
-//	{
-//		auxFacturacion=auxFacturacion-(10*auxFacturacion/100);
-//		libro_setFacturacion(this, auxFacturacion);
-//	}
-//}
+void libro_putDis(void* this)
+{
+	int auxId, auxPrecio;
+	if( libro_getId((eLibro*)this, &auxId)==0 && libro_getPrecio((eLibro*)this, &auxPrecio)==0 )
+	{
+		switch(auxId)
+		{
+		case 1: //  planeta
+			if(auxPrecio>=300)
+			{
+				auxPrecio=auxPrecio-(auxPrecio*20/100);
+				libro_setPrecio(this, auxPrecio);
+			}
+			break;
+		case 2: //  siglo xxi
+			if(auxPrecio<=200)
+			{
+				auxPrecio=auxPrecio-(auxPrecio*10/100);
+				libro_setPrecio(this, auxPrecio);
+			}
+			break;
+		case 3: //person
+			break;
+		case 4: // minotauro
+			break;
+		case 5: // salamandra
+			break;
+		case 6: // pinguns
+			break;
+		}
+	}
+}
 
 //void libro_putDis(void* this)
 //{
