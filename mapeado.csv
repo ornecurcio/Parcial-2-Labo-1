@@ -4,17 +4,17 @@ id,titulo,autor,precio,editorialId
 6,Las aventuras de pinocho,Collodi Carlo,300,PENGUIN BOOKS
 3,Como programar en Java,Deitel & Deitel,1000,PEARSON
 9,Como programar en C++,Deitel & Deitel,1000,PEARSON
-8,Matematica... ¿estas ahi? Episodio 2,Paenza,150,SIGLO XXI EDITORES
+8,Matematica... ¿estas ahi? Episodio 2,Paenza,135,SIGLO XXI EDITORES
 14,Matematica... ¿estas ahi? Episodio 3.14,Paenza,350,SIGLO XXI EDITORES
 2,Matematica... ¿estas ahi?,Paenza,350,SIGLO XXI EDITORES
 13,La vida por la patria,Pigna,250,PLANETA
-7,La voz del gran jefe,Pigna,500,PLANETA
-18,Libertadores de America,Pigna,500,PLANETA
-19,Matematica... ¿estas ahi? Episodio 100,Pigna,150,SIGLO XXI EDITORES
+7,La voz del gran jefe,Pigna,400,PLANETA
+18,Libertadores de America,Pigna,400,PLANETA
+19,Matematica... ¿estas ahi? Episodio 100,Pigna,135,SIGLO XXI EDITORES
 1,Manuel Belgrano,Pigna,248,PLANETA
-23,Los mitos de la historia argentina 1,Pigna,500,PLANETA
-25,Los mitos de la historia argentina 2,Pigna,450,PLANETA
-27,Los mitos de la historia argentina 3,Pigna,375,PLANETA
+23,Los mitos de la historia argentina 1,Pigna,400,PLANETA
+25,Los mitos de la historia argentina 2,Pigna,360,PLANETA
+27,Los mitos de la historia argentina 3,Pigna,300,PLANETA
 29,Los mitos de la historia argentina 4,Pigna,250,PLANETA
 30,Los mitos de la historia argentina 5,Pigna,270,PLANETA
 24,Harry Potter y la Orden del Fenix,Rowling,800,SALAMANDRA

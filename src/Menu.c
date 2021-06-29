@@ -16,12 +16,12 @@ int menu(void)
 	    do{
 	    	if(utn_getNumero(&option,"-------- Seleccione una opcion --------\n"
 	    			"1. Cargar Archivo\n"
-	    			"2. Imprimir Listado\n"
-	    			"3. Generar Archivo de montos\n4. Informes\n5. Salir\n",
+	    			"2. Ordenar lista de Libros\n"
+	    			"3. Imprimir listado de Libros\n4. Informes\n5. Guardar listado en archivo\n6. Salir",
 	    					"------- Error ingrese ------ \n"
 					"1. Cargar Archivo\n"
-				    "2. Imprimir Ventas\n"
-				    "3. Generar Archivo de montos\n4. Informes\n5. Guardar Listado\n6. Salir\n", 1, 6, 2)==0){
+				    "2. Ordenar lista de Libros\n"
+				    "3. Imprimir listado de Libros\n4. Informes\n5. Guardar listado en archivo\n6. Salir\n", 1, 6, 2)==0){
 				switch(option)
 				{
 					case 1:
@@ -66,6 +66,7 @@ int menu(void)
 						if(flag!=0)
 						{
 							controller_putInDisLibro(eLibros);
+							controller_ListLibro(eLibros);
 						}
 						else
 						{

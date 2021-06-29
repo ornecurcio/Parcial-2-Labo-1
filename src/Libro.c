@@ -389,7 +389,7 @@ int libro_sortAutor(void* thisOne, void* thisTwo)
 void libro_putDis(void* this)
 {
 	int auxId, auxPrecio;
-	if( libro_getId((eLibro*)this, &auxId)==0 && libro_getPrecio((eLibro*)this, &auxPrecio)==0 )
+	if( libro_getEditorialId((eLibro*)this, &auxId)==0 && libro_getPrecio((eLibro*)this, &auxPrecio)==0 )
 	{
 		switch(auxId)
 		{
